@@ -130,12 +130,12 @@ public class PDFExport extends Resource {
 		
 		if (usefontconfig)
 		{
-			sett = Settings.builder().timezone(timezone).requestHeaders(new RequestHeaders(map)).screen(dim).blockAds(false)
+			sett = Settings.builder().loggerLevel(null).logJavascript(false).logTrace(false).logWire(false).timezone(timezone).requestHeaders(new RequestHeaders(map)).screen(dim).blockAds(false)
 				.quickRender(false).ajaxWait(10000).ajaxResourceTimeout(ajaxResourceTimeout).hostnameVerification(false).ssl("trustanything").build();
 		}
 		else
 		{
-			 sett = Settings.builder().timezone(timezone).requestHeaders(new RequestHeaders(map)).screen(dim).blockAds(false)
+			 sett = Settings.builder().loggerLevel(null).logJavascript(false).logTrace(false).logWire(false).timezone(timezone).requestHeaders(new RequestHeaders(map)).screen(dim).blockAds(false)
 						.quickRender(false).ajaxWait(10000).ajaxResourceTimeout(ajaxResourceTimeout).hostnameVerification(false).ssl("trustanything").javaOptions("-Dprism.useFontConfig=false").build();
 		}
 
