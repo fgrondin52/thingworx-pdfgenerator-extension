@@ -130,10 +130,7 @@
                 <fileset dir="${lib.dir}/" includes="commons-lang-2.6.jar"/>
                 <globmapper from="*" to="${package.common.lib.dir}/*"/>
             </mappedresources>
-        <mappedresources>
-                <fileset dir="${lib.dir}/" includes="commons-logging-1.2.jar"/>
-                <globmapper from="*" to="${package.common.lib.dir}/*"/>
-            </mappedresources>
+
         <mappedresources>
                 <fileset dir="${lib.dir}/" includes="httpclient-4.5.1.jar"/>
                 <globmapper from="*" to="${package.common.lib.dir}/*"/>
